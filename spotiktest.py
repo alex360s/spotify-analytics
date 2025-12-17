@@ -1,7 +1,7 @@
 import requests
 import base64
-CLIENT_ID = "6864985f37554b9a96daa3a93caea2f4"
-CLIENT_SECRET = "5f78f0f2ca49490da81b05e9968eed74"
+CLIENT_ID = ""
+CLIENT_SECRET = ""
 auth_string = f"{CLIENT_ID}:{CLIENT_SECRET}"
 auth_bytes = auth_string.encode("utf-8")
 auth_base64 = base64.b64encode(auth_bytes).decode("utf-8")
