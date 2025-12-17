@@ -36,5 +36,6 @@ for artist_id in ARTIST_IDS:
         print(f'Name - {data["name"]}')
         print(f'Followers - {data["followers"]["total"]}')
         print(f'Popularity - {data["popularity"]}')
-    except:
+    except Exception as e:
         print(f"Erorr with artist's id - {artist_id}: {e}")
+115520598
