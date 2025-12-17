@@ -1,7 +1,13 @@
 import requests
 import base64
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
+CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+
 auth_string = f"{CLIENT_ID}:{CLIENT_SECRET}"
 auth_bytes = auth_string.encode("utf-8")
 auth_base64 = base64.b64encode(auth_bytes).decode("utf-8")
